@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base app theme -->
+    <style name="Theme.RemoteSMSControl" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.RemoteSMSControl.Splash" parent="Theme.SplashScreen">
+        <!-- Background color (instead of drawable to avoid crash) -->
+        <item name="windowSplashScreenBackground">@color/white</item>
+
+        <!-- Your app icon -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+
+        <!-- After splash, go to normal theme -->
+        <item name="postSplashScreenTheme">@style/Theme.RemoteSMSControl</item>
+    </style>
+
+</resources>
